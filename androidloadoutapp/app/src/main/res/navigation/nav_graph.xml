@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/openingFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.com.brcarlini.androidloadoutapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_loadAleatFragment"
+            app:destination="@id/loadAleatFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_warzonellFragment"
+            app:destination="@id/warzonellFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mwllFragment"
+            app:destination="@id/mwllFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_warzoneFragment"
+            app:destination="@id/warzoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadAleatFragment"
+        android:name="br.com.brcarlini.androidloadoutapp.LoadAleatFragment"
+        android:label="fragment_load_aleat"
+        tools:layout="@layout/fragment_load_aleat" >
+        <action
+            android:id="@+id/action_loadAleatFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/openingFragment"
+        android:name="br.com.brcarlini.androidloadoutapp.openingFragment"
+        android:label="fragment_opening"
+        tools:layout="@layout/fragment_opening" >
+        <action
+            android:id="@+id/action_openingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.brcarlini.androidloadoutapp.loginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/warzonellFragment"
+        android:name="br.com.brcarlini.androidloadoutapp.warzonellFragment"
+        android:label="fragment_warzonell"
+        tools:layout="@layout/fragment_warzonell" >
+        <action
+            android:id="@+id/action_warzonellFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_warzonellFragment_to_formWzllFragment"
+            app:destination="@id/formWzllFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mwllFragment"
+        android:name="br.com.brcarlini.androidloadoutapp.mwllFragment"
+        android:label="fragment_mwll"
+        tools:layout="@layout/fragment_mwll" >
+        <action
+            android:id="@+id/action_mwllFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/warzoneFragment"
+        android:name="br.com.brcarlini.androidloadoutapp.warzoneFragment"
+        android:label="fragment_warzone"
+        tools:layout="@layout/fragment_warzone" >
+        <action
+            android:id="@+id/action_warzoneFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/formWzllFragment"
+        android:name="br.com.brcarlini.androidloadoutapp.formWzllFragment"
+        android:label="fragment_form_wzll"
+        tools:layout="@layout/fragment_form_wzll" >
+        <action
+            android:id="@+id/action_formWzllFragment_to_warzonellFragment"
+            app:destination="@id/warzonellFragment"
+            app:popUpTo="@id/warzonellFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

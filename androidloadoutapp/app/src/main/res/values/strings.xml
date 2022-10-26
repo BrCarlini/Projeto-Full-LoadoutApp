@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Loadout Master Blaster</string>
+
+    <!-- Strings da Tela Home -->
+    <string name="homeTitle">Escolha o jogo para ver seus metas atuais.</string>
+    <string name="opcoesMetas">Warzone 2 - Modern Warfare II - Warzone</string>
+    <string name="button_wz2">Warzone II</string>
+    <string name="button_mw2">Modern Warfare II</string>
+    <string name="button_wz">Warzone</string>
+    <string name="button_sl">Sortear Loadout</string>
+
+
+    <!-- Strings da Tela Sorteio de Loadout -->
+    <string name="title_sort">Sorteie um Loadout totalmente exótico</string>
+    <string name="desc_sort">Compatilhe com seus amigos e Streamers favoritos</string>
+    <string name="button_sort">Sortear</string>
+
+
+    <!-- Strings da Tela Login -->
+    <string name="fiel_email">E-mail</string>
+    <string name="button_login">Log In</string>
+
+
+    <!-- Strings da Tela Metas Warzone 2 -->
+    <string name="title_wz2">Metas Warzone II</string>
+    <string name="buttonBack_wz2">Voltar</string>
+    <string name="fab_wz2">Ir para Formulario</string>
+
+
+
+    <!-- Strings da Tela de Form Warzone 2 -->
+    <string name="title_formWz2">Crie um Loadout para Warzone II</string>
+    <string name="nome_formWz2">Nome da Arma</string>
+    <string name="boca_formWz2">Boca</string>
+    <string name="cano_formWz2">Cano</string>
+    <string name="laser_formWz2">Laser</string>
+    <string name="lente_formWz2">Lente</string>
+    <string name="coronha_formWz2">Coronha</string>
+    <string name="acoplamento_formWz2">Acoplamento</string>
+    <string name="municao_formWz2">Munição</string>
+    <string name="carregador_formWz2">Carregador</string>
+    <string name="cabo_formWz2">Cabo</string>
+    <string name="button_criarLoadout">Criar Loadout</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
